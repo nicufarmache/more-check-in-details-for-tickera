@@ -20,6 +20,9 @@ More Check In Details for Tickera
 
 ## Changelog ##
 
+### 1.2 ###
+* Compatibility update for Tickera 3.5.2.7+
+
 ### 1.1 ###
 * First version
 

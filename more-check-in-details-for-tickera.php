@@ -3,7 +3,7 @@
 * Plugin Name: More Check In Details For Tickera
 * Plugin URI:  https://github.com/nicufarmache/more-check-in-details-for-tickera
 * Description: More Check In Details for Tickera
-* Version:     1.1
+* Version:     1.2
 * License:     GPL v2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 * Author:      Nicu Farmache
@@ -17,8 +17,8 @@
 add_filter('tc_checkin_custom_fields', 'mcidft_tc_checkin_custom_fields', 10, 5);
 
 function mcidft_tc_checkin_custom_fields ($custom_fields, $ticket_instance_id, $event_id, $order, $ticket_type) {
-	$ticket_instance = new TC_Ticket( (int) $ticket_instance_id );
-	$ticket	= new TC_Ticket();
+	$ticket_instance = new Tickera\TC_Ticket( (int) $ticket_instance_id );
+	$ticket	= new Tickera\TC_Ticket();
 	$event_id	= $ticket->get_ticket_event( apply_filters( 'tc_ticket_type_id', $ticket_instance->details->ticket_type_id ) );
 	$event_name	= get_the_title( $event_id );
   if (get_post_type($ticket_instance->details->ticket_type_id) == 'product_variation') {

@@ -1,6 +1,6 @@
 {
   "name": "more-check-in-details-for-tickera",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "Gruntfile.js",
   "author": "Nicu Farmache",
   "scripts": {
